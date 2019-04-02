@@ -7,6 +7,26 @@
         1,
         null,
         1,
+        2,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null
+      ],
+      "/Users/joshglasson/projects/battle/spec/features/player_names_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
         1,
         null,
         null
@@ -20,6 +40,6 @@
         null
       ]
     },
-    "timestamp": 1554210487
+    "timestamp": 1554211118
   }
 }
