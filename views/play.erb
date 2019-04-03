@@ -1,10 +1,18 @@
-<%= @game.player_1.name %> vs. <%= @game.player_2.name %>
+<body style="background:powderblue"><center>
+<h1 style = "font-family:georgia;font-size:48px;"><%= @game.player_1.name %> vs. <%= @game.player_2.name %></h1>
 
-<%= @game.current_turn.name %>'s turn
+<h2 style = "font-size:30px"><%= @game.current_turn.name %>'s turn</h2>
 
+<h3 style = "color: blue">
 <%= @game.player_1.name %>: <%= @game.player_1.hit_points %>HP
+</h3>
+
+<h3 style = "color: red">
 <%= @game.player_2.name %>: <%= @game.player_2.hit_points %>HP
+</h3>
 
 <form action="/attack" method="post">
   <input type="submit" value="Attack">
 </form>
+</center>
+</body>

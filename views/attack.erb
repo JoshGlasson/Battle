@@ -1,9 +1,13 @@
+<body style="background:powderblue"><center>
+<h1 style = "font-size: 100px">
 <% if @game.current_turn == @game.player_1 %>
 <%= @game.player_1.name %> attacked <%= @game.player_2.name %>
 <% else %>
 <%= @game.player_2.name %> attacked <%= @game.player_1.name %>
 <% end %>
+</h1>
 
 <form action="/switch_turns" method="post">
   <input type="submit" value="OK">
 </form>
+</center></body>

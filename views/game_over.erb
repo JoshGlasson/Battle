@@ -1,1 +1,20 @@
-<%= @game.loser.name %> loses!
+<style>
+.blinking{
+    animation:blinkingText 5s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: blue;    }
+    10%{     color: pink;    }
+    20%{    color: green; }
+    30%{    color: red; }
+    40%{    color: white; }
+    50%{    color: brown; }
+    60%{    color:yellow;  }
+    70%{    color:black;  }
+    80%{   color: purple;    }
+    90%{    color: beige;  }
+}
+</style>
+<body style= "background:powderblue"><center>
+<h1><span class="blinking" style="font-size:250px;"><%= @game.loser.name %> loses!</span></h1>
+</center></body>
